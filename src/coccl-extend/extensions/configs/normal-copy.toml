@@ -1,0 +1,34 @@
+[runtime]
+mode = "normal"
+compression_threshold_bytes = 0
+
+[compressor_plugins]
+compressors = ["copy"]
+library_path = "../../../../build/obj/coccl-extend/compressor_plugin/libcompress"
+
+[normal.all_to_all.default]
+compressor = "copy"
+
+[normal.all_gather.default]
+compressor = "copy"
+
+[normal.all_reduce.default]
+compressor = "copy"
+
+[normal.all_reduce.intra]
+compressor = "copy"
+
+[normal.all_reduce.inter]
+compressor = "copy"
+
+[normal.reduce_scatter.default]
+compressor = "copy"
+
+[normal.reduce_scatter.intra]
+compressor = "copy"
+
+[normal.reduce_scatter.inter]
+compressor = "copy"
+
+[normal.sendrecv.default]
+compressor = "copy"
